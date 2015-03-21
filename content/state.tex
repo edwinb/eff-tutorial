@@ -139,8 +139,8 @@ for our purposes, it suffices to know the following:
 \item \texttt{do} blocks allow effectful operations to be sequenced.
 \item \texttt{x <- e} binds the result of an effectful operation \texttt{e} to
 a variable \texttt{x}. For example, in the above code, \texttt{treeTagAux l}
-is an effectful operation returning a pair \texttt{(Int, BTree a)}, so
-\texttt{l'} has type \texttt{(Int, BTree a)}.
+is an effectful operation returning \texttt{BTree (Int, a)}, so \texttt{l'} has
+type \texttt{BTree (Int, a)}.
 \item \texttt{pure e} turns a pure value \texttt{e} into the result of
 an effectful operation.
 \end{itemize}
